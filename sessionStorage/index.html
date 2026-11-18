@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Exemplo de armazenamento e recuperação de uma anotação com sessionStorage.">
+  <title>Anotação da sessão</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="cartao">
+    <h1>Sua anotação,<br>nesta sessão.</h1>
+    <p class="introducao">Guarde uma ideia e recupere quando precisar, enquanto esta aba estiver aberta.</p>
+
+    <form id="formulario">
+      <label for="anotacao">O que você quer guardar?</label>
+      <textarea id="anotacao" name="anotacao" rows="4" maxlength="500" placeholder="Ex.: revisar a atividade de JavaScript" required></textarea>
+      <div class="acoes">
+        <button type="submit" class="principal">Salvar anotação</button>
+        <button type="button" id="recuperar">Recuperar</button>
+        <button type="button" id="apagar" class="apagar">Apagar</button>
+      </div>
+    </form>
+
+    <p id="mensagem" role="status" aria-live="polite">Nenhuma anotação salva nesta sessão.</p>
+
+    <section class="resultado" aria-labelledby="titulo-resultado">
+      <h2 id="titulo-resultado">Informação armazenada</h2>
+      <p id="conteudo-salvo">Sua anotação aparecerá aqui.</p>
+    </section>
+
+    <aside class="dica">
+      <strong>Faça o teste</strong>
+      <p>Salve um texto e recarregue a página. A anotação continua aqui! Ao encerrar a sessão da aba, os dados são apagados.</p>
+    </aside>
+  </main>
+</body>
+</html>

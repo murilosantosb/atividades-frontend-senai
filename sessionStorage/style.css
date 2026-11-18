@@ -1,0 +1,54 @@
+﻿body {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: white;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 8px;
+  font: inherit;
+  resize: vertical;
+}
+
+button {
+  margin: 5px 5px 0 0;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+#conteudo-salvo {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.dica {
+  margin-top: 20px;
+}
